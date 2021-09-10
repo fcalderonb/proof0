@@ -1,0 +1,24 @@
+.articulo{
+    background-color: rgb(197, 238, 219);
+    width: 44%;
+    padding: 3%;
+    /* margin: 3px; */
+}
+.articulo__titulo{
+    text-align: center;
+}
+.articulo__texto{
+    text-align: right;
+}
+.articulo__imagen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    /* height: 70%; */
+    border-radius: 20px;
+}
+.par-noticias{
+    display: flex;
+    flex-wrap: wrap;
+}
