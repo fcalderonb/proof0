@@ -1,3 +1,6 @@
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
 .articulo{
     background-color: rgb(197, 238, 219);
     width: 44%;
@@ -23,17 +26,23 @@
     flex-wrap: wrap;
 }
 .encabezado{
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     background-color: rgb(10, 10, 49);
 
 }
 .encabezado__titulo{
+    margin: 0px 0px;
+    padding: 5px;
+    display: block;
     color: aquamarine;
     text-align: center;
+    font-weight: bold;
+    font-family: 'Akaya Kanadaka', cursive;
+    border-bottom: solid aquamarine 1px;
 }
 
-.btnmenu {
+/* .btnmenu {
     border: none;
     color:rgb(10, 10, 49);
     padding: 16px 32px;
@@ -41,10 +50,12 @@
     text-decoration: none;
     display: block;
     font-size: 16px;
+    font-weight: bold;
     margin: 0px 0px;
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 0px;
+    width: 25%;
   }
   .boton1 {
     background-color: rgb(10, 10, 49); 
@@ -57,11 +68,40 @@
     background-color: aquamarine;
     color: rgb(10, 10, 49);
     border-radius: 0px;
+  } */
+
+  .btnmenu {
+    border: none;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 0px;
+    width: 25%;
+  }
+  .boton1 {
+    background-color: inherit; 
+    color: aquamarine; 
+    border-bottom: solid 5px rgb(10, 10, 49);
+    border-radius: 0px;
+  }
+  
+  .boton1:hover {
+    background-color: rgb(6, 6, 29);
+    border-bottom: solid aquamarine 5px;
+    border-radius: 0px;
   }
   .navegacion{
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
   }
   .encabezado_imagen{
+      display: block;
       width: 100%;
   }
