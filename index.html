@@ -9,24 +9,27 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header class="encabezado">
-        <H1 class="encabezado__titulo">PerritosTIC</H1>
-        <nav class="navegacion">
-            <button class="btnmenu boton1">INICIO</button>
-            <button class="btnmenu boton1">SECTION 1</button>
-            <button class="btnmenu boton1">SECTION 2</button>
-            <button class="btnmenu boton1">SECTION 3</button>
-        </nav>
+        <div class="encabezado-contenedor">
+            <H1 class="encabezado__titulo">PerritosTIC</H1>
+            <nav class="navegacion">
+                <a class="btnmenu boton1" href="#">INICIO</a>
+                <a class="btnmenu boton1" href="#news">SECTION 1</a>
+                <a class="btnmenu boton1" href="#">SECTION 2</a>
+                <a class="btnmenu boton1" href="#">SECTION 3</a>
+            </nav>
+        </div>
         <img class="encabezado_imagen" src=foto1.jpg alt="">
     </header>
 
     <!-- Parte principal -->
     <main>
-        <section class="Noticias">
+        <section id="news" class="Noticias">
             <h2 class="Noticias__titulo">Noticias</h2>
             <div class="par-noticias">
                 <article class="articulo">
