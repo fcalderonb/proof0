@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--     <img id="myImage"
+        src="https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        style="width:500px">
+    <button id="myboton">Zapato negro</button>
+
+    <script src="./javascript.js">
+    </script>
+
+    <h2>Qué podemos hacer con JavaScript?</h2>
+    <p id="demo">JavaScript puede ocultar o mostrar elementos.</p>
+    
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">Oculta!
+    </button>
+    
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">Muestra!
+    </button> -->
+
+
+    <h1 id="titulo"></h1>
+    <img id="poster" src="" alt="">
+    <p id="descripcion"></p>
+
+    <script>
+        let jsonarchivo = {
+            "Title": "The Last Airbender",
+            "Year": "2010",
+            "Rated": "PG",
+            "Released": "01 Jul 2010",
+            "Runtime": "103 min",
+            "Genre": "Action, Adventure, Family",
+            "Director": "M. Night Shyamalan",
+            "Writer": "M. Night Shyamalan",
+            "Actors": "Noah Ringer, Nicola Peltz, Jackson Rathbone",
+            "Plot": "Follows the adventures of Aang, a young successor to a long line of Avatars, who must master all four elements and stop the Fire Nation from enslaving the Water Tribes and the Earth Kingdom.",
+            "Language": "English",
+            "Country": "United States",
+            "Awards": "8 wins & 12 nominations",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTM1NjE0NDA0MV5BMl5BanBnXkFtZTcwODE4NDg1Mw@@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "4.0/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "5%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "20/100"
+                }
+            ],
+            "Metascore": "20",
+            "imdbRating": "4.0",
+            "imdbVotes": "158,154",
+            "imdbID": "tt0938283",
+            "Type": "movie",
+            "DVD": "16 Nov 2010",
+            "BoxOffice": "$131,772,187",
+            "Production": "Blinding Edge Pictures, Kennedy/Marshall",
+            "Website": "N/A",
+            "Response": "True"
+        }
+
+        document.getElementById('titulo').innerText=jsonarchivo.Title;
+        document.getElementById('poster').src =jsonarchivo.Poster;
+        document.getElementById('descripcion').innerText=jsonarchivo.Plot;
+    </script>
+</body>
+
+</html>
