@@ -1,0 +1,7 @@
+.poster{
+    width: max-content;
+    object-fit:fill;
+}
+p{
+    text-align: justify;
+}

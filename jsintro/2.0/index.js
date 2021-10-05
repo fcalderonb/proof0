@@ -17,12 +17,11 @@ let getSearchData = () =>{
 }
 
 let getAppiData = async (data) =>{
-    let urlAppi = `http://www.omdbapi.com/?i=tt3896198&apikey=a970a59a&t=${data}&type=movie&plot=full`
+    let urlAppi = `http://www.omdbapi.com/?i=tt3896198&apikey=a970a59a&t=${data}&plot=full`
     try {
         let resultSearch = await fetch(urlAppi,{method:'GET'});
         let resultJson=await resultSearch.json();
 
-        console.log(resultJson);
         
         setSearchedData(resultJson);
         
